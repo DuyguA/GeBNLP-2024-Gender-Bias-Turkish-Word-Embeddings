@@ -1,0 +1,1 @@
+# GeBNLP-2024-Gender-Bias-Turkish-Word-Embeddings
