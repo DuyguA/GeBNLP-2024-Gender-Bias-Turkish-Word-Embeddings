@@ -22,7 +22,7 @@ For this phase, navigate to `prep_vocab` directory and use the bash script in th
 
 ### Train the Floret vectors
 
-For this phase, you need a the library `floret` and might wanna pip install it before using. After that run the script, provide the sentences file you created in the first step to the script. 
+For this phase, you need a the library `floret` and might wanna pip install it before using. After that run the script, provide the sentences file you created in the first step to the script. This will dump 	a `.bin` file which is the vectors.
 
 
 ### [Optional] Train spaCy models
@@ -32,6 +32,18 @@ This is a step to replicate measuring the success of the Floret vectors in the p
 
 
 ### Pick up the gender results by POS category
+For this section, in order to calculate word POS and lemma, one needs a spaCy Turkish model. You can install the transformer based model with:
+
+```
+pip install https://huggingface.co/turkish-nlp-suite/tr_core_news_trf/resolve/main/tr_core_news_trf-any-py3-none-any.whl
+```
+
+or you can plug-in the model trained in the previous step.
+
+Navigate to `make_results` directory and fire up the `get_pos_root.py` with the vocab file of your choice. This script will write a file with each line includes a triplet `(word, lemma, pos)`. This step will help us to sort the words with POS tag and learn lemma gender.
+
+Now we can calculate gender. For this part, again one needs `floret` library to load the Floret vectors we generated in the third step and then get the word vector per each vocabulary word.
+We feed the output of previous step into `get_word_gender.py` script to get the final results, final result is a file containing tuples of the form `(pos, word, gender_score, gender, lemma, lemma_gender_score, lemma_gender, gender_change_flag)`. 
 
 
 
