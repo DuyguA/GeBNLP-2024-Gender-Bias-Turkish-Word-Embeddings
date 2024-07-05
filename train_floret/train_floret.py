@@ -16,6 +16,10 @@ model = floret.train_unsupervised(
 )
 
 
-# export floret vector table
+# export floret vector table, use for spaCy
 model.save_floret_vectors("academic_vectors.floret")
+
+
+# export fasttext style
+model.save_model("academic_vectors.bin")
 
