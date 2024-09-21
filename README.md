@@ -57,3 +57,25 @@ Noun başkanlıklarını 5.2295945e-06 male başkan 0.09763732 male same
 
 
 These are the results we presented at the paper.
+
+### Citation
+
+```
+@inproceedings{altinok-2024-gender,
+    title = "Gender Bias in {T}urkish Word Embeddings: A Comprehensive Study of Syntax, Semantics and Morphology Across Domains",
+    author = "Altinok, Duygu",
+    editor = "Fale{\'n}ska, Agnieszka  and
+      Basta, Christine  and
+      Costa-juss{\`a}, Marta  and
+      Goldfarb-Tarrant, Seraphina  and
+      Nozza, Debora",
+    booktitle = "Proceedings of the 5th Workshop on Gender Bias in Natural Language Processing (GeBNLP)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.gebnlp-1.13",
+    pages = "203--218",
+    abstract = "Gender bias in word representations has emerged as a prominent research area in recent years. While numerous studies have focused on measuring and addressing bias in English word embeddings, research on the Turkish language remains limited. This work aims to bridge this gap by conducting a comprehensive evaluation of gender bias in Turkish word embeddings, considering the dimensions of syntax, semantics, and morphology. We employ subword-based static word vectors trained on three distinct domains: web crawl, academical text, and medical text. Through the analysis of gender-associated words in each domain, we not only uncover gender bias but also gain insights into the unique characteristics of these domains. Additionally, we explore the influence of Turkish suffixes on word gender, providing a novel perspective on gender bias. Our findings reveal the pervasive nature of gender biases across various aspects of the Turkish language, including word frequency, semantics, parts-of-speech, and even the smallest linguistic unit - suffixes. Notably, we demonstrate that the majority of noun and verb lemmas, as well as adverbs and adjectives, exhibit masculine gendering in the general-purpose written language. This study is the first of its kind to offer a comprehensive examination of gender bias in the Turkish language.",
+}
+```
