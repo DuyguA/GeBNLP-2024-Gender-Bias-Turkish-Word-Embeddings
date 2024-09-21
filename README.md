@@ -1,6 +1,6 @@
 ## Gender Bias in Turkish Word Embeddings: A Comprehensive Study of Syntax, Semantics and Morphology Across Domains
 
-This repository contains code for the GEBNLP 2024 paper, Gender Bias in Turkish Word Embeddings: A Comprehensive Study of Syntax, Semantics and Morphology Across Domains.
+This repository contains code for the GEBNLP 2024 paper, [Gender Bias in Turkish Word Embeddings: A Comprehensive Study of Syntax, Semantics and Morphology Across Domains](https://aclanthology.org/2024.gebnlp-1.13.pdf).
 
 ## Overview
 
